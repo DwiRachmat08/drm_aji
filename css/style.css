@@ -196,6 +196,22 @@ hr.devider {
 }
 
 footer {
-  padding: 100px 0 10px 0;
+  padding: 10px 0 10px 0;
   font-size: 30px;
+}
+
+footer a {
+  margin-right: 20px;
+}
+
+footer a i {
+  font-size: 20px;
+}
+
+.fa-copyright {
+  font-size: 10px;
+}
+
+.copyright {
+  font-size: 10px;
 }
