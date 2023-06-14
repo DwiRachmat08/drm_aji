@@ -12,6 +12,16 @@ let text = document.getElementById("text");
 
 window.addEventListener("scroll", () => {
   let value = window.scrollY;
+  console.log($(document).scrollTop());
+
+  // custom navbar onscroll
+  if ($(document).scrollTop() > 930) {
+    $("header").addClass("fixed-top");
+    $("header").css("background-color", "#000");
+  } else {
+    $("header").removeClass("fixed-top");
+  }
+  // end custom
 
   // text.style.marginTop = value * 2.5 + 'px';
 });
@@ -83,3 +93,4 @@ window.onload = function () {
   css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
   document.body.appendChild(css);
 };
+// end TYPERWRITE
