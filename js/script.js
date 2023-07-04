@@ -19,7 +19,7 @@ window.addEventListener("scroll", () => {
     $("header").addClass("fixed-top");
     $("header").css({
       "background-color": "#000",
-      transition: "background-color 1s ease",
+      transition: "background-color 1s ease-in-out",
     });
   } else {
     $("header").removeClass("fixed-top");
@@ -109,3 +109,18 @@ $("i").hover(
   }
 );
 // end icon
+
+//magnificPopup
+$('.zoom-gallery').magnificPopup({
+  delegate: 'a',
+  type: 'image',
+  gallery: {
+    enabled: true
+  },
+  zoom: {
+    enabled: true,
+    duration: 500,
+    transition: 'ease-in-out'
+  }
+  
+});
