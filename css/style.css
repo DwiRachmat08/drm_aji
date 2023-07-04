@@ -13,6 +13,10 @@ body {
   /* background: linier-gradient(#fff, #818281); */
 }
 
+section:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
 .landing {
   height: 100vh;
   background-color: #000;
@@ -312,3 +316,11 @@ footer a i {
 }
 
 /* end icon contact */
+
+/* gallery */
+#gallery img {
+  width: auto;
+  height: 150px;
+  padding-left: 10px;
+}
+/* end gallery */
