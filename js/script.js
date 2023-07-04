@@ -17,9 +17,13 @@ window.addEventListener("scroll", () => {
   // custom navbar onscroll
   if ($(document).scrollTop() > 930) {
     $("header").addClass("fixed-top");
-    $("header").css("background-color", "#000");
+    $("header").css({
+      "background-color": "#000",
+      transition: "background-color 1s ease",
+    });
   } else {
     $("header").removeClass("fixed-top");
+    $("header").css({ "background-color": "", transition: "" });
   }
   // end custom
 
@@ -94,3 +98,14 @@ window.onload = function () {
   document.body.appendChild(css);
 };
 // end TYPERWRITE
+
+//icon
+$("i").hover(
+  function () {
+    $(this).addClass("fa-beat");
+  },
+  function () {
+    $(this).removeClass("fa-beat");
+  }
+);
+// end icon
