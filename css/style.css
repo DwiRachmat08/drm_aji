@@ -324,3 +324,10 @@ footer a i {
   padding-left: 10px;
 }
 /* end gallery */
+
+/* tabel item list */
+#table-itemList > tr > td:nth-child(1) {
+  border-right: 1px solid #000 !important;
+}
+
+/* end tabel item list */
