@@ -163,8 +163,8 @@ section#hero {
     left: 2rem;
     width: unset;
   }
-  #hero-main {
-    padding-left: 10px;
+  section#hero {
+    padding-left: 40px;
   }
 }
 
