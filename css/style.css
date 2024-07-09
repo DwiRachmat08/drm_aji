@@ -73,6 +73,16 @@ header {
   gap: 2rem;
 }
 
+.navbar > ul > li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar > ul > li > a {
+  text-decoration: none;
+}
+
 .navbar > .toggle_btn {
   position: fixed;
   right: 40px;
