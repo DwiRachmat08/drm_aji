@@ -111,16 +111,15 @@ $("i").hover(
 // end icon
 
 //magnificPopup
-$('.zoom-gallery').magnificPopup({
-  delegate: 'a',
-  type: 'image',
+$(".zoom-gallery").magnificPopup({
+  delegate: "a",
+  type: "image",
   gallery: {
-    enabled: true
+    enabled: true,
   },
   zoom: {
     enabled: true,
     duration: 500,
-    transition: 'ease-in-out'
-  }
-  
+    transition: "ease-in-out",
+  },
 });
